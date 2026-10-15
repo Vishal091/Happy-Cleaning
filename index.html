@@ -147,7 +147,10 @@
     .reviews .eyebrow { color: #dce8d9; }
     .reviews h2 { color: white; }
     .reviews .section-head .lead { color: rgba(255,255,255,.72); }
-    .review-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; align-items: stretch; }
+    .review-grid { display: grid; grid-template-columns: repeat(6,1fr); gap: 18px; align-items: stretch; }
+    .review-card { grid-column: span 2; }
+    .review-card:nth-child(4) { grid-column: 2 / span 2; }
+    .review-card:nth-child(5) { grid-column: 4 / span 2; }
     .review-card { padding: 27px; border-radius: 20px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.13); display: flex; flex-direction: column; min-height: 265px; }
     .review-stars { color: #ffbf84; letter-spacing: 2px; font-size: .94rem; margin-bottom: 17px; }
     .review-card blockquote { margin: 0 0 24px; font-size: .98rem; line-height: 1.75; color: rgba(255,255,255,.9); }
@@ -227,6 +230,8 @@
       .footer-grid > :last-child { grid-column: 2 / 4; }
     }
     @media (max-width: 780px) {
+      .review-grid { grid-template-columns: repeat(2,1fr); }
+      .review-card { grid-column: auto; }
       .container { width: min(100% - 36px, var(--max)); }
       .section { padding: 74px 0; }
       .announcement { font-size: .76rem; }
@@ -271,6 +276,8 @@
       .footer { padding-bottom: 104px; }
     }
     @media (max-width: 510px) {
+      .review-grid { grid-template-columns: 1fr; }
+      .review-card { grid-column: auto; }
       .container { width: calc(100% - 30px); }
       .brand-mark { width: 39px; height: 39px; border-radius: 13px 13px 13px 4px; }
       .brand-text strong { font-size: 1rem; }
@@ -320,7 +327,7 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "HouseCleaning",
+    "@type": "LocalBusiness",
     "name": "Happy Cleaning",
     "url": "https://happycleaningusa.com/",
     "telephone": "+1-856-870-0188",
@@ -333,7 +340,6 @@
     "openingHoursSpecification": [
       {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"18:00"}
     ],
-    "sameAs": ["https://www.google.com/maps"]
   }
   </script>
 </head>
@@ -524,11 +530,6 @@
             <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
             <blockquote>“Nathalie was very timely and professional in all of our interactions. She addressed all of my concerns about specific outcomes I expected.”</blockquote>
             <div class="review-author"><span class="review-avatar">WM</span><span><strong>Wayne Moore</strong><small>Google review</small></span></div>
-          </article>
-          <article class="review-card">
-            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <blockquote>“I went behind them and checked for areas where most would leave areas not dusted and to my surprise they cleaned those areas.”</blockquote>
-            <div class="review-author"><span class="review-avatar">LC</span><span><strong>Lowbagus797</strong><small>Google review</small></span></div>
           </article>
         </div>
         <p class="review-note">Review excerpts are shortened for readability. Names and wording should be checked against the original public reviews before launch.</p>
