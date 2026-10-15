@@ -421,6 +421,26 @@
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
     }
+
+    /* Mobile grid hardening: cancel desktop review-card column placement before it
+       can widen the document and make the page drift sideways. */
+    html, body { max-width: 100%; overflow-x: clip; }
+    .review-grid > *, .service-grid > *, .care-grid > * { min-width: 0; }
+    @media (max-width: 780px) {
+      .review-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .review-grid > .review-card,
+      .review-grid > .review-card:nth-child(4),
+      .review-grid > .review-card:nth-child(5),
+      .review-grid > .review-card:last-child { grid-column: auto; width: auto; min-width: 0; }
+    }
+    @media (max-width: 510px) {
+      .review-grid { grid-template-columns: minmax(0, 1fr); }
+      .review-grid > .review-card,
+      .review-grid > .review-card:nth-child(4),
+      .review-grid > .review-card:nth-child(5),
+      .review-grid > .review-card:last-child { grid-column: 1; width: auto; min-width: 0; }
+      .review-card { overflow-wrap: anywhere; }
+    }
   </style>
   <script type="application/ld+json">
   {
