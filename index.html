@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173d34">
+  <meta name="description" content="A thoughtful, detail-first clean for homes, apartments, offices and Airbnb turnovers across South Jersey and Philadelphia. Request a free, no-obligation quote from Happy Cleaning.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Happy Cleaning | Come home to happy">
+  <meta property="og:description" content="Family-owned home and commercial cleaning across South Jersey and Philadelphia. Get a free, no-obligation quote.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85">
+  <title>Happy Cleaning | House & Commercial Cleaning in South Jersey and Philadelphia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #173d34;
+      --forest-2: #224e41;
+      --sage: #e8eee6;
+      --sage-2: #f4f6f0;
+      --cream: #fbf9f3;
+      --paper: #fffefa;
+      --ink: #1d2925;
+      --muted: #69736d;
+      --line: #e3e8df;
+      --orange: #ef925e;
+      --orange-light: #fff0e6;
+      --white: #fff;
+      --shadow: 0 18px 50px rgba(23, 61, 52, .11);
+      --radius: 22px;
+      --radius-lg: 30px;
+      --max: 1160px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body { margin: 0; background: var(--cream); color: var(--ink); font-family: "DM Sans", Arial, sans-serif; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button, input, select, textarea { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    :focus-visible { outline: 3px solid var(--orange); outline-offset: 4px; }
+    .skip-link { position: absolute; top: -60px; left: 12px; z-index: 1000; background: var(--forest); color: white; padding: 12px 18px; border-radius: 10px; }
+    .skip-link:focus { top: 12px; }
+    .container { width: min(var(--max), calc(100% - 48px)); margin-inline: auto; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 9px; color: var(--forest-2); font-size: .76rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+    .eyebrow:before { content: ""; display: inline-block; width: 23px; height: 2px; background: var(--orange); border-radius: 10px; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { font-family: "Manrope", "DM Sans", Arial, sans-serif; letter-spacing: -.045em; line-height: 1.08; }
+    h1 { font-size: clamp(2.8rem, 5.5vw, 5.2rem); font-weight: 800; margin: 24px 0 22px; }
+    h2 { font-size: clamp(2.05rem, 3.6vw, 3.5rem); font-weight: 800; margin: 14px 0 18px; }
+    h3 { font-size: 1.24rem; font-weight: 800; margin-bottom: 12px; }
+    .lead { font-size: clamp(1rem, 1.3vw, 1.16rem); color: var(--muted); max-width: 600px; line-height: 1.8; }
+    .section { padding: 100px 0; }
+    .section-head { max-width: 700px; margin: 0 auto 46px; text-align: center; }
+    .section-head .lead { margin: 0 auto; }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; padding: 14px 22px; border: 1px solid transparent; border-radius: 999px; font-weight: 800; font-size: .95rem; line-height: 1.2; cursor: pointer; transition: transform .2s ease, background .2s ease, box-shadow .2s ease; }
+    .button:hover { transform: translateY(-2px); }
+    .button-primary { background: var(--forest); color: var(--white); box-shadow: 0 8px 20px rgba(23,61,52,.16); }
+    .button-primary:hover { background: var(--forest-2); box-shadow: 0 11px 26px rgba(23,61,52,.2); }
+    .button-light { background: var(--white); color: var(--forest); border-color: #dfe5dc; }
+    .button-light:hover { background: var(--sage-2); }
+    .button-orange { background: var(--orange); color: #2b271f; }
+    .button-orange:hover { background: #f4a579; }
+    .button svg { width: 18px; height: 18px; flex: 0 0 auto; }
+    .announcement { background: var(--forest); color: rgba(255,255,255,.92); font-size: .82rem; text-align: center; padding: 9px 15px; }
+    .announcement a { color: white; font-weight: 800; text-decoration: underline; text-underline-offset: 3px; }
+    .header { position: sticky; top: 0; z-index: 100; background: rgba(251,249,243,.92); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(227,232,223,.8); }
+    .nav { height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+    .brand { display: inline-flex; align-items: center; gap: 11px; min-width: max-content; }
+    .brand-mark { width: 44px; height: 44px; display: grid; place-items: center; background: var(--forest); color: white; border-radius: 15px 15px 15px 5px; transform: rotate(-3deg); }
+    .brand-mark svg { width: 26px; height: 26px; transform: rotate(3deg); }
+    .brand-text { display: grid; line-height: 1.08; }
+    .brand-text strong { font-family: "Manrope", sans-serif; font-size: 1.14rem; letter-spacing: -.05em; font-weight: 800; }
+    .brand-text small { color: var(--muted); font-size: .64rem; letter-spacing: .13em; text-transform: uppercase; margin-top: 5px; }
+    .nav-links { display: flex; align-items: center; gap: 28px; color: #3d4943; font-size: .91rem; font-weight: 700; }
+    .nav-links a:not(.button):hover { color: var(--forest); }
+    .nav-actions { display: flex; align-items: center; gap: 12px; }
+    .nav-actions .button { min-height: 46px; padding: 12px 17px; font-size: .88rem; }
+    .menu-toggle { display: none; width: 44px; height: 44px; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid var(--line); background: var(--paper); color: var(--forest); cursor: pointer; }
+    .menu-toggle svg { width: 22px; height: 22px; }
+    .hero { padding: 68px 0 42px; overflow: hidden; }
+    .hero-grid { display: grid; grid-template-columns: 1.04fr .96fr; align-items: center; gap: 55px; }
+    .hero-copy { padding: 8px 0 36px; }
+    .hero h1 .highlight { color: var(--forest-2); position: relative; white-space: nowrap; }
+    .hero h1 .highlight:after { content: ""; position: absolute; height: 10px; background: var(--orange); opacity: .8; left: 2px; right: 2px; bottom: -3px; z-index: -1; border-radius: 100% 30% 60% 20%; transform: rotate(-1.6deg); }
+    .hero-copy .lead { max-width: 520px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+    .mini-proof { display: flex; flex-wrap: wrap; align-items: center; gap: 13px; margin-top: 30px; color: var(--muted); font-size: .86rem; }
+    .avatar-stack { display: flex; padding-left: 3px; }
+    .avatar-stack span { display: grid; place-items: center; width: 31px; height: 31px; margin-left: -4px; border: 2px solid var(--cream); border-radius: 50%; background: var(--sage); color: var(--forest); font-size: .65rem; font-weight: 800; }
+    .avatar-stack span:nth-child(2) { background: #f8dfcc; }
+    .avatar-stack span:nth-child(3) { background: #d7e6d7; }
+    .avatar-stack span:nth-child(4) { background: #eadff2; }
+    .stars { color: #d78546; letter-spacing: 2px; font-size: .92rem; }
+    .hero-visual { min-height: 520px; position: relative; }
+    .hero-photo { position: absolute; inset: 0 0 22px 35px; border-radius: 190px 190px 34px 34px; overflow: hidden; background: #dfe8dc; box-shadow: var(--shadow); }
+    .hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-photo:after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 55%, rgba(16,37,30,.30)); }
+    .photo-caption { position: absolute; bottom: 48px; left: 65px; right: 28px; z-index: 1; color: white; }
+    .photo-caption strong { display: block; font-family: "Manrope", sans-serif; font-size: 1.35rem; margin-bottom: 4px; letter-spacing: -.03em; }
+    .photo-caption span { font-size: .9rem; color: rgba(255,255,255,.9); }
+    .floating-card { position: absolute; z-index: 2; background: var(--paper); border: 1px solid rgba(227,232,223,.9); border-radius: 18px; box-shadow: 0 12px 35px rgba(23,61,52,.12); padding: 17px 19px; }
+    .floating-card.top { left: 0; top: 75px; display: flex; align-items: center; gap: 12px; }
+    .floating-icon { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 14px; background: var(--orange-light); color: var(--forest); }
+    .floating-icon svg { width: 23px; height: 23px; }
+    .floating-card strong { display: block; font-family: "Manrope", sans-serif; font-weight: 800; font-size: .95rem; }
+    .floating-card small { color: var(--muted); font-size: .79rem; }
+    .floating-card.bottom { bottom: 0; right: -12px; max-width: 235px; }
+    .floating-card.bottom p { margin: 8px 0 0; font-size: .86rem; line-height: 1.5; }
+    .tick-row { display: flex; align-items: center; gap: 7px; color: var(--forest); font-size: .84rem; font-weight: 800; }
+    .tick-row svg { width: 18px; height: 18px; }
+    .trust-strip { padding: 28px 0; border-block: 1px solid var(--line); background: rgba(255,254,250,.68); }
+    .trust-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 22px; }
+    .trust-item { display: flex; align-items: center; justify-content: center; gap: 12px; color: #3f4c45; font-size: .91rem; font-weight: 700; }
+    .trust-item svg { width: 23px; height: 23px; color: var(--forest-2); flex: 0 0 auto; }
+    .services { background: var(--paper); }
+    .service-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
+    .service-card { padding: 28px; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; display: flex; flex-direction: column; min-height: 280px; transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+    .service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: #ced9cc; }
+    .service-icon { width: 52px; height: 52px; display: grid; place-items: center; border-radius: 17px; background: var(--sage-2); color: var(--forest); margin-bottom: 23px; }
+    .service-icon svg { width: 26px; height: 26px; }
+    .service-card p { color: var(--muted); margin-bottom: 22px; font-size: .94rem; }
+    .text-link { display: inline-flex; align-items: center; gap: 8px; margin-top: auto; width: fit-content; font-weight: 800; color: var(--forest); font-size: .9rem; }
+    .text-link svg { width: 17px; height: 17px; transition: transform .2s ease; }
+    .text-link:hover svg { transform: translateX(4px); }
+    .band { background: var(--sage-2); }
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 70px; }
+    .why-visual { position: relative; padding: 0 28px 32px 0; }
+    .why-photo { border-radius: var(--radius-lg); overflow: hidden; height: 500px; background: #dce6dc; }
+    .why-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .why-note { position: absolute; right: 0; bottom: 0; max-width: 265px; padding: 24px; background: var(--forest); color: white; border-radius: 20px; box-shadow: var(--shadow); }
+    .why-note strong { display: block; font-family: "Manrope", sans-serif; font-size: 1.16rem; margin-bottom: 8px; }
+    .why-note p { margin: 0; color: rgba(255,255,255,.78); font-size: .9rem; }
+    .why-copy .lead { margin-bottom: 28px; }
+    .benefit-list { display: grid; gap: 18px; margin: 0 0 32px; padding: 0; list-style: none; }
+    .benefit-list li { display: flex; align-items: flex-start; gap: 13px; color: #3f4c45; }
+    .check-circle { display: grid; place-items: center; width: 27px; height: 27px; min-width: 27px; color: var(--forest); background: #dfe9dc; border-radius: 50%; margin-top: 1px; }
+    .check-circle svg { width: 15px; height: 15px; }
+    .benefit-list strong { color: var(--ink); display: block; margin-bottom: 3px; }
+    .benefit-list span { color: var(--muted); font-size: .92rem; }
+    .process-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 28px; }
+    .process-card { position: relative; padding: 30px 26px; border-top: 1px solid var(--line); }
+    .step-num { display: grid; place-items: center; width: 46px; height: 46px; background: var(--orange-light); color: var(--forest); border-radius: 16px; font-family: "Manrope", sans-serif; font-weight: 800; margin-bottom: 22px; }
+    .process-card p { color: var(--muted); margin: 0; font-size: .95rem; }
+    .reviews { background: var(--forest); color: white; }
+    .reviews .eyebrow { color: #dce8d9; }
+    .reviews h2 { color: white; }
+    .reviews .section-head .lead { color: rgba(255,255,255,.72); }
+    .review-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; align-items: stretch; }
+    .review-card { padding: 27px; border-radius: 20px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.13); display: flex; flex-direction: column; min-height: 265px; }
+    .review-stars { color: #ffbf84; letter-spacing: 2px; font-size: .94rem; margin-bottom: 17px; }
+    .review-card blockquote { margin: 0 0 24px; font-size: .98rem; line-height: 1.75; color: rgba(255,255,255,.9); }
+    .review-author { margin-top: auto; display: flex; align-items: center; gap: 12px; }
+    .review-avatar { display: grid; place-items: center; width: 42px; height: 42px; flex: 0 0 auto; border-radius: 50%; background: #dfe9dc; color: var(--forest); font-weight: 800; }
+    .review-author strong { display: block; color: white; font-size: .91rem; }
+    .review-author small { display: block; color: rgba(255,255,255,.64); font-size: .78rem; }
+    .review-note { text-align: center; color: rgba(255,255,255,.65); font-size: .8rem; margin: 22px 0 0; }
+    .service-area-grid { display: grid; grid-template-columns: .95fr 1.05fr; gap: 55px; align-items: center; }
+    .area-panel { background: var(--sage-2); padding: 34px; border-radius: var(--radius-lg); border: 1px solid var(--line); }
+    .area-tags { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 24px; }
+    .area-tag { border: 1px solid #d9e2d6; background: #fff; border-radius: 999px; padding: 9px 13px; font-size: .85rem; font-weight: 700; color: #3d5145; }
+    .area-disclaimer { font-size: .86rem; color: var(--muted); margin: 22px 0 0; }
+    .area-list { display: grid; gap: 17px; margin: 28px 0 0; }
+    .area-row { display: flex; align-items: flex-start; gap: 12px; }
+    .area-row svg { width: 23px; height: 23px; color: var(--forest); flex: 0 0 auto; }
+    .area-row strong { display: block; margin-bottom: 2px; }
+    .area-row span { color: var(--muted); font-size: .92rem; }
+    .faq { background: var(--paper); }
+    .faq-grid { display: grid; grid-template-columns: .7fr 1.3fr; gap: 70px; align-items: start; }
+    .faq-aside .lead { font-size: 1rem; }
+    .faq-list { border-top: 1px solid var(--line); }
+    .faq-item { border-bottom: 1px solid var(--line); }
+    .faq-question { display: flex; justify-content: space-between; align-items: center; gap: 20px; width: 100%; padding: 22px 0; border: 0; background: transparent; text-align: left; color: var(--ink); font-family: "Manrope", sans-serif; font-weight: 800; cursor: pointer; }
+    .faq-question svg { width: 20px; height: 20px; flex: 0 0 auto; color: var(--forest); transition: transform .2s ease; }
+    .faq-question[aria-expanded="true"] svg { transform: rotate(45deg); }
+    .faq-answer { padding: 0 40px 23px 0; color: var(--muted); font-size: .94rem; }
+    .faq-answer p { margin: 0; }
+    .quote-section { padding: 95px 0; }
+    .quote-wrap { display: grid; grid-template-columns: .92fr 1.08fr; gap: 35px; background: var(--sage); border-radius: 32px; padding: 45px; overflow: hidden; }
+    .quote-copy { padding: 18px 14px 18px 6px; }
+    .quote-copy h2 { font-size: clamp(2.2rem,3.8vw,3.5rem); }
+    .quote-copy .lead { margin-bottom: 29px; }
+    .contact-options { display: grid; gap: 15px; }
+    .contact-option { display: flex; align-items: center; gap: 13px; }
+    .contact-option .service-icon { margin: 0; width: 45px; height: 45px; border-radius: 14px; background: rgba(255,255,255,.76); }
+    .contact-option small { display: block; color: var(--muted); font-size: .78rem; }
+    .contact-option strong { display: block; color: var(--forest); font-size: .96rem; }
+    .quote-form { background: var(--paper); border-radius: 25px; padding: 30px; box-shadow: 0 12px 35px rgba(23,61,52,.06); }
+    .form-intro { display: flex; align-items: flex-start; justify-content: space-between; gap: 15px; margin-bottom: 24px; }
+    .form-intro h3 { margin: 0 0 6px; font-size: 1.35rem; }
+    .form-intro p { color: var(--muted); margin: 0; font-size: .88rem; }
+    .free-chip { white-space: nowrap; border-radius: 999px; padding: 7px 10px; background: var(--orange-light); color: #864a27; font-size: .76rem; font-weight: 800; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+    .field { display: grid; gap: 7px; }
+    .field.full { grid-column: 1 / -1; }
+    .field label { color: #36453d; font-size: .82rem; font-weight: 800; }
+    .field input, .field select, .field textarea { width: 100%; border: 1px solid #dfe5dc; border-radius: 12px; background: white; color: var(--ink); padding: 13px 14px; outline: none; min-height: 49px; transition: border-color .15s ease, box-shadow .15s ease; }
+    .field textarea { min-height: 94px; resize: vertical; }
+    .field input::placeholder, .field textarea::placeholder { color: #a0aaa2; }
+    .field input:focus, .field select:focus, .field textarea:focus { border-color: #88a293; box-shadow: 0 0 0 3px rgba(34,78,65,.08); }
+    .form-submit { width: 100%; margin-top: 18px; }
+    .form-privacy { color: var(--muted); font-size: .76rem; margin: 12px 0 0; text-align: center; }
+    .form-status { display: none; color: var(--forest); background: var(--sage-2); padding: 10px 13px; border-radius: 10px; margin-top: 12px; font-size: .86rem; }
+    .footer { background: #102f28; color: white; padding: 60px 0 24px; }
+    .footer-grid { display: grid; grid-template-columns: 1.3fr .7fr .9fr 1fr; gap: 38px; padding-bottom: 46px; }
+    .footer .brand-text small { color: rgba(255,255,255,.55); }
+    .footer .brand-mark { background: var(--orange); color: var(--forest); }
+    .footer p { color: rgba(255,255,255,.66); font-size: .91rem; max-width: 300px; margin: 20px 0 0; }
+    .footer h3 { color: white; font-size: .91rem; letter-spacing: 0; margin: 6px 0 17px; }
+    .footer-links { display: grid; align-content: start; gap: 11px; }
+    .footer-links a, .footer-links span { color: rgba(255,255,255,.67); font-size: .88rem; }
+    .footer-links a:hover { color: white; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.12); padding-top: 22px; display: flex; justify-content: space-between; gap: 20px; color: rgba(255,255,255,.53); font-size: .78rem; }
+    .footer-bottom a { color: rgba(255,255,255,.8); }
+    .mobile-cta { display: none; }
+    .icon { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    @media (max-width: 1050px) {
+      .nav-links { gap: 18px; }
+      .nav-actions .button-light { display: none; }
+      .hero-grid { gap: 30px; }
+      .hero-visual { min-height: 470px; }
+      .service-grid { grid-template-columns: repeat(2,1fr); }
+      .why-grid { gap: 45px; }
+      .quote-wrap { padding: 32px; }
+      .footer-grid { grid-template-columns: 1.2fr 1fr 1fr; }
+      .footer-grid > :last-child { grid-column: 2 / 4; }
+    }
+    @media (max-width: 780px) {
+      .container { width: min(100% - 36px, var(--max)); }
+      .section { padding: 74px 0; }
+      .announcement { font-size: .76rem; }
+      .nav { height: 72px; }
+      .menu-toggle { display: inline-flex; }
+      .nav-actions { margin-left: auto; }
+      .nav-actions .button { min-height: 43px; padding: 11px 14px; font-size: .82rem; }
+      .nav-links { display: none; position: absolute; top: 72px; left: 0; right: 0; padding: 18px 24px 24px; border-bottom: 1px solid var(--line); background: var(--cream); box-shadow: 0 18px 25px rgba(23,61,52,.08); flex-direction: column; align-items: stretch; gap: 4px; }
+      .nav-links.open { display: flex; }
+      .nav-links a:not(.button) { padding: 12px 6px; }
+      .nav-links .button { margin-top: 10px; }
+      .hero { padding: 46px 0 35px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 20px; }
+      .hero-copy { padding: 0; }
+      h1 { font-size: clamp(2.9rem, 10vw, 4.5rem); }
+      .hero-visual { min-height: min(114vw, 500px); margin: 10px 10px 0 0; }
+      .hero-photo { left: 28px; inset-block-end: 18px; border-radius: 150px 150px 28px 28px; }
+      .floating-card.top { top: 47px; }
+      .floating-card.bottom { right: -9px; }
+      .photo-caption { left: 53px; bottom: 38px; }
+      .trust-grid { grid-template-columns: repeat(2,1fr); row-gap: 21px; }
+      .trust-item { justify-content: flex-start; font-size: .84rem; }
+      .service-grid { gap: 13px; }
+      .service-card { padding: 22px; min-height: 260px; }
+      .service-icon { width: 47px; height: 47px; margin-bottom: 18px; }
+      .why-grid, .service-area-grid, .faq-grid, .quote-wrap { grid-template-columns: 1fr; gap: 36px; }
+      .why-grid { gap: 40px; }
+      .why-visual { max-width: 560px; }
+      .why-photo { height: 420px; }
+      .process-grid { gap: 10px; }
+      .process-card { padding: 24px 14px; }
+      .review-grid { grid-template-columns: repeat(2,1fr); }
+      .review-card:last-child { grid-column: 1 / -1; min-height: auto; }
+      .area-panel { padding: 26px; }
+      .faq-grid { gap: 20px; }
+      .quote-wrap { padding: 28px; }
+      .quote-copy { padding: 0; }
+      .footer-grid { grid-template-columns: repeat(2,1fr); gap: 30px 22px; }
+      .footer-grid > :last-child { grid-column: auto; }
+      .mobile-cta { display: flex; position: fixed; z-index: 90; bottom: 12px; left: 12px; right: 12px; gap: 10px; padding: 8px; border-radius: 999px; background: rgba(255,254,250,.94); border: 1px solid var(--line); box-shadow: 0 12px 35px rgba(23,61,52,.18); backdrop-filter: blur(10px); }
+      .mobile-cta .button { flex: 1; min-height: 46px; padding: 12px 14px; font-size: .86rem; }
+      .footer { padding-bottom: 104px; }
+    }
+    @media (max-width: 510px) {
+      .container { width: calc(100% - 30px); }
+      .brand-mark { width: 39px; height: 39px; border-radius: 13px 13px 13px 4px; }
+      .brand-text strong { font-size: 1rem; }
+      .brand-text small { font-size: .58rem; }
+      .nav-actions .button { display: none; }
+      .hero-actions { display: grid; grid-template-columns: 1fr; }
+      .hero-actions .button { width: 100%; }
+      .hero-visual { min-height: 440px; }
+      .floating-card { padding: 13px 14px; }
+      .floating-card.top { left: -1px; top: 48px; gap: 9px; }
+      .floating-icon { width: 37px; height: 37px; }
+      .floating-card strong { font-size: .85rem; }
+      .floating-card small { font-size: .73rem; }
+      .floating-card.bottom { max-width: 205px; right: -6px; }
+      .floating-card.bottom p { font-size: .8rem; }
+      .photo-caption { left: 43px; right: 18px; bottom: 32px; }
+      .photo-caption strong { font-size: 1.1rem; }
+      .photo-caption span { font-size: .8rem; }
+      .trust-strip { padding: 23px 0; }
+      .trust-grid { gap: 18px 12px; }
+      .trust-item { font-size: .76rem; gap: 8px; }
+      .trust-item svg { width: 20px; height: 20px; }
+      .service-grid { grid-template-columns: 1fr; }
+      .service-card { min-height: auto; }
+      .service-card p { margin-bottom: 20px; }
+      .process-grid { grid-template-columns: 1fr; gap: 4px; }
+      .process-card { padding: 20px 0 23px; }
+      .step-num { margin-bottom: 15px; }
+      .review-grid { grid-template-columns: 1fr; }
+      .review-card, .review-card:last-child { grid-column: auto; min-height: auto; }
+      .why-photo { height: 360px; }
+      .why-note { max-width: 230px; padding: 19px; }
+      .area-panel { padding: 23px; }
+      .quote-wrap { padding: 21px; border-radius: 24px; }
+      .quote-form { padding: 21px; }
+      .form-grid { grid-template-columns: 1fr; }
+      .field.full { grid-column: auto; }
+      .form-intro { flex-direction: column; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px 18px; }
+      .footer-grid > :first-child { grid-column: 1 / -1; }
+      .footer-bottom { flex-direction: column; gap: 8px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HouseCleaning",
+    "name": "Happy Cleaning",
+    "url": "https://happycleaningusa.com/",
+    "telephone": "+1-856-870-0188",
+    "email": "contact@happycleaningusa.com",
+    "areaServed": [
+      {"@type":"AdministrativeArea","name":"South Jersey"},
+      {"@type":"City","name":"Philadelphia"}
+    ],
+    "description": "Family-owned residential and commercial cleaning serving South Jersey and the Philadelphia area.",
+    "openingHoursSpecification": [
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"18:00"}
+    ],
+    "sameAs": ["https://www.google.com/maps"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement">A little more breathing room starts here. <a href="#quote">Get a free cleaning quote →</a></div>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Happy Cleaning home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" class="icon"><path d="M16 3.5c1.7 6.1 3.4 7.8 9.5 9.5-6.1 1.7-7.8 3.4-9.5 9.5-1.7-6.1-3.4-7.8-9.5-9.5 6.1-1.7 7.8-3.4 9.5-9.5Z"/><path d="m25 21 1.3 3.7L30 26l-3.7 1.3L25 31l-1.3-3.7L20 26l3.7-1.3L25 21Z"/></svg>
+        </span>
+        <span class="brand-text"><strong>Happy Cleaning</strong><small>Make room for happy</small></span>
+      </a>
+      <nav class="nav-links" id="primary-nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#why-us">Why Happy Cleaning</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#service-area">Service area</a>
+        <a href="#faq">FAQ</a>
+        <a href="#quote" class="button button-primary">Get a free quote <span aria-hidden="true">↗</span></a>
+      </nav>
+      <div class="nav-actions">
+        <a class="button button-light" href="tel:+18568700188" aria-label="Call Happy Cleaning"><svg viewBox="0 0 24 24" class="icon"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 8.9a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.8 2.1Z"/></svg> Call</a>
+        <a class="button button-primary" href="#quote">Free quote <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="primary-nav" aria-expanded="false">
+          <svg viewBox="0 0 24 24" class="icon"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Family-owned · South Jersey & Philadelphia</span>
+          <h1>Come home to <span class="highlight">happy.</span></h1>
+          <p class="lead">A thoughtful, detail-first clean that lets you spend less time catching up on chores—and more time enjoying the spaces that matter.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#quote">Get my free quote <svg viewBox="0 0 24 24" class="icon"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+            <a class="button button-light" href="https://wa.me/18568700188?text=Hi%20Happy%20Cleaning%2C%20I%27d%20like%20a%20free%20cleaning%20quote." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" class="icon"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20l1.2-5.2A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.5 8.5c.5 2 2 3.5 4 4l1.4-1.4 2.1 1c-.3 1.5-1.4 2.2-2.6 2.1-3.2-.5-5.8-3-6.2-6.2-.2-1.2.6-2.3 2.1-2.6l1 2.1-1.8 1Z"/></svg> Message us</a>
+          </div>
+          <div class="mini-proof">
+            <div class="avatar-stack" aria-hidden="true"><span>CM</span><span>LM</span><span>SM</span><span>WM</span></div>
+            <div><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><span>Kind people. Careful work. Happier homes.</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85" alt="Warm, bright living room with a clean, comfortable feel" fetchpriority="high">
+            <div class="photo-caption"><strong>Come back to calm.</strong><span>We’ll take care of the clean.</span></div>
+          </div>
+          <div class="floating-card top">
+            <span class="floating-icon"><svg viewBox="0 0 24 24" class="icon"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"/></svg></span>
+            <span><strong>Care in every corner</strong><small>Details make the difference</small></span>
+          </div>
+          <div class="floating-card bottom">
+            <div class="tick-row"><svg viewBox="0 0 24 24" class="icon"><path d="m5 12 4 4L19 6"/></svg> Trusted local team</div>
+            <p>Family-owned, licensed and insured, with care that feels personal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Happy Cleaning values">
+      <div class="container trust-grid">
+        <div class="trust-item"><svg viewBox="0 0 24 24" class="icon"><path d="M12 21s8-4 8-11V5l-8-3-8 3v5c0 7 8 11 8 11Z"/><path d="m9 12 2 2 4-4"/></svg><span>Licensed & insured</span></div>
+        <div class="trust-item"><svg viewBox="0 0 24 24" class="icon"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg><span>Family-owned service</span></div>
+        <div class="trust-item"><svg viewBox="0 0 24 24" class="icon"><path d="m12 3 2.4 5.3 5.8.8-4.2 4.1 1 5.8-5-2.8-5 2.8 1-5.8-4.2-4.1 5.8-.8L12 3Z"/></svg><span>Detail-first cleaning</span></div>
+        <div class="trust-item"><svg viewBox="0 0 24 24" class="icon"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg><span>Free, no-obligation quote</span></div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">A clean for your kind of day</span>
+          <h2>More than a clean.<br>It’s a fresh start.</h2>
+          <p class="lead">From the weekly reset to the big move, we’ll help find the right clean for your home, rental, or workplace.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-icon"><svg viewBox="0 0 24 24" class="icon"><path d="m3 10 9-7 9 7"/><path d="M5 9v11h14V9M9 20v-6h6v6"/></svg></div>
+            <h3>Standard Cleaning</h3>
+            <p>Keep your home feeling fresh with regular care for floors, surfaces, kitchens, bathrooms, and the everyday details.</p>
+            <a class="text-link" href="#quote" data-service="Standard Cleaning">Get a quote <svg viewBox="0 0 24 24" class="icon"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><svg viewBox="0 0 24 24" class="icon"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 11h.01M15 11h.01M9 15h.01M15 15h.01M10 21v-3h4v3"/></svg></div>
+            <h3>Deep Cleaning</h3>
+            <p>For the first visit or when your space needs extra attention, focus on the build-up and overlooked spots.</p>
+            <a class="text-link" href="#quote" data-service="Deep Cleaning">Get a quote <svg viewBox="0 0 24 24" class="icon"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><svg viewBox="0 0 24 24" class="icon"><path d="M4 7h16M4 12h16M4 17h10"/><path d="m17 15 3 3-3 3"/></svg></div>
+            <h3>Move-In / Move-Out</h3>
+            <p>Start your next chapter—or hand over the keys—with a more thorough clean of the space you're leaving or entering.</p>
+            <a class="text-link" href="#quote" data-service="Move-In / Move-Out Cleaning">Get a quote <svg viewBox="0 0 24 24" class="icon"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><svg viewBox="0 0 24 24" class="icon"><path d="M3 7h18v13H3z"/><path d="M7 7V4h10v3M7 12h3M7 16h7"/></svg></div>
+            <h3>Apartment Cleaning</h3>
+            <p>Thoughtful cleaning tailored to your apartment, with attention to the rooms and details you use every day.</p>
+            <a class="text-link" href="#quote" data-service="Apartment Cleaning">Get a quote <svg viewBox="0 0 24 24" class="icon"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><svg viewBox="0 0 24 24" class="icon"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 12h6M9 16h6"/></svg></div>
+            <h3>Airbnb & Rental Turnovers</h3>
+            <p>Prepare short-term rentals between stays with a reset designed around timing, presentation, and guest readiness.</p>
+            <a class="text-link" href="#quote" data-service="Airbnb / Rental Turnover">Get a quote <svg viewBox="0 0 24 24" class="icon"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><svg viewBox="0 0 24 24" class="icon"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 21V9h6v12M3 9h6M15 9h6"/></svg></div>
+            <h3>Office & Commercial</h3>
+            <p>Help keep workspaces, shared areas, and business premises clean, comfortable, and ready for the people who use them.</p>
+            <a class="text-link" href="#quote" data-service="Office / Commercial Cleaning">Request a walkthrough <svg viewBox="0 0 24 24" class="icon"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band" id="why-us">
+      <div class="container why-grid">
+        <div class="why-visual">
+          <div class="why-photo"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=85" loading="lazy" alt="Professional cleaner carefully wiping a surface during a home clean"></div>
+          <div class="why-note"><strong>The little details add up.</strong><p>Careful work, warm communication, and a space that feels good to come back to.</p></div>
+        </div>
+        <div class="why-copy">
+          <span class="eyebrow">The Happy Cleaning difference</span>
+          <h2>Good cleaning.<br>Good people.<br>Good feeling.</h2>
+          <p class="lead">Inviting someone into your home or business is personal. We aim to make the process feel clear, considerate, and easy from the first message to the final check.</p>
+          <ul class="benefit-list">
+            <li><span class="check-circle"><svg viewBox="0 0 24 24" class="icon"><path d="m5 12 4 4L19 6"/></svg></span><div><strong>Care that notices the details</strong><span>Clients often call out thoroughness, from dusting to the finishing touches.</span></div></li>
+            <li><span class="check-circle"><svg viewBox="0 0 24 24" class="icon"><path d="m5 12 4 4L19 6"/></svg></span><div><strong>Clear, personal communication</strong><span>Tell us what matters to you and what you’d like us to focus on.</span></div></li>
+            <li><span class="check-circle"><svg viewBox="0 0 24 24" class="icon"><path d="m5 12 4 4L19 6"/></svg></span><div><strong>Licensed and insured service</strong><span>Extra peace of mind while we care for your space.</span></div></li>
+            <li><span class="check-circle"><svg viewBox="0 0 24 24" class="icon"><path d="m5 12 4 4L19 6"/></svg></span><div><strong>A quote made for your space</strong><span>Every home and workplace is different—tell us what you need and we’ll discuss the next step.</span></div></li>
+          </ul>
+          <a class="button button-primary" href="#quote">Let’s talk about your clean <svg viewBox="0 0 24 24" class="icon"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Easy from the start</span>
+          <h2>Three simple steps<br>to a fresher space.</h2>
+          <p class="lead">No guesswork. Tell us what you need, confirm the details, and we’ll help you plan the clean.</p>
+        </div>
+        <div class="process-grid">
+          <article class="process-card"><div class="step-num">01</div><h3>Tell us about your space</h3><p>Share your ZIP code, type of property, and the cleaning you have in mind.</p></article>
+          <article class="process-card"><div class="step-num">02</div><h3>Get your free quote</h3><p>We’ll follow up to understand the details and provide a no-obligation estimate.</p></article>
+          <article class="process-card"><div class="step-num">03</div><h3>Choose a time that works</h3><p>Once the details are agreed, we’ll coordinate the next available time for your clean.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Kind words from real customers</span>
+          <h2>Clean spaces.<br>Happy people.</h2>
+          <p class="lead">The best part of the job is hearing that the difference was felt—not just seen.</p>
+        </div>
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>“When I walked in the door, I could feel how fresh and sanitized my home was. Not only did they do a fantastic job, they were very kind and welcoming!”</blockquote>
+            <div class="review-author"><span class="review-avatar">CM</span><span><strong>Cabriyah Marc</strong><small>Google review</small></span></div>
+          </article>
+          <article class="review-card">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>“These ladies are the sweetest and hardest working cleaning team I have ever met! Cleaned my house from top to bottom. MY HOUSE SHINES.”</blockquote>
+            <div class="review-author"><span class="review-avatar">LM</span><span><strong>Lynn Michel</strong><small>Google review</small></span></div>
+          </article>
+          <article class="review-card">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>“Extremely thorough. Hired for a move in clean and I did not think it was possible to get some of the things cleaned that they did. Worth every dollar.”</blockquote>
+            <div class="review-author"><span class="review-avatar">SM</span><span><strong>Samantha Mazzeo</strong><small>Google review</small></span></div>
+          </article>
+          <article class="review-card">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>“Very professional, very thorough and deliberate with cleaning and dusting of my home.”</blockquote>
+            <div class="review-author"><span class="review-avatar">L</span><span><strong>Lowbagus797</strong><small>Google review</small></span></div>
+          </article>
+          <article class="review-card">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>“Nathalie was very timely and professional in all of our interactions. She addressed all of my concerns about specific outcomes I expected.”</blockquote>
+            <div class="review-author"><span class="review-avatar">WM</span><span><strong>Wayne Moore</strong><small>Google review</small></span></div>
+          </article>
+          <article class="review-card">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>“I went behind them and checked for areas where most would leave areas not dusted and to my surprise they cleaned those areas.”</blockquote>
+            <div class="review-author"><span class="review-avatar">LC</span><span><strong>Lowbagus797</strong><small>Google review</small></span></div>
+          </article>
+        </div>
+        <p class="review-note">Review excerpts are shortened for readability. Names and wording should be checked against the original public reviews before launch.</p>
+      </div>
+    </section>
+
+    <section class="section" id="service-area">
+      <div class="container service-area-grid">
+        <div>
+          <span class="eyebrow">Close to home</span>
+          <h2>Local care for<br>South Jersey & Philly.</h2>
+          <p class="lead">Happy Cleaning serves homes and businesses across South Jersey and the Philadelphia area. Not sure if your ZIP code is covered? Send it with your quote request and we’ll confirm.</p>
+          <div class="area-list">
+            <div class="area-row"><svg viewBox="0 0 24 24" class="icon"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><div><strong>South Jersey</strong><span>Including Willingboro, Mount Laurel, Marlton, and Cherry Hill.</span></div></div>
+            <div class="area-row"><svg viewBox="0 0 24 24" class="icon"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><div><strong>Philadelphia, Pennsylvania</strong><span>Residential and commercial cleaning across the city and surrounding suburbs.</span></div></div>
+          </div>
+        </div>
+        <div class="area-panel">
+          <span class="eyebrow">Your neighborhood, our next clean</span>
+          <h3>Let’s check your ZIP code.</h3>
+          <p class="lead" style="font-size:.97rem">Give us a few details and we’ll confirm coverage and the best service for your space.</p>
+          <div class="area-tags"><span class="area-tag">Willingboro</span><span class="area-tag">Mount Laurel</span><span class="area-tag">Marlton</span><span class="area-tag">Cherry Hill</span><span class="area-tag">Philadelphia</span><span class="area-tag">Nearby suburbs</span></div>
+          <p class="area-disclaimer">Coverage can vary by ZIP code and service type. Please ask us to confirm availability before booking.</p>
+          <a href="#quote" class="button button-primary" style="margin-top:22px">Check my area <svg viewBox="0 0 24 24" class="icon"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-aside">
+          <span class="eyebrow">A few helpful details</span>
+          <h2>Good to know<br>before we clean.</h2>
+          <p class="lead">Still have a question? Call or message us—we’re happy to talk it through.</p>
+          <a class="text-link" href="https://wa.me/18568700188?text=Hi%20Happy%20Cleaning%2C%20I%20have%20a%20question." target="_blank" rel="noopener noreferrer">Ask us a question <svg viewBox="0 0 24 24" class="icon"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="true" aria-controls="faq-a1">What areas do you serve?<svg viewBox="0 0 24 24" class="icon"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-answer" id="faq-a1"><p>We serve South Jersey and the Philadelphia area. Share your ZIP code with your quote request and we’ll confirm whether your location is covered.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a2">Which cleaning services can I request?<svg viewBox="0 0 24 24" class="icon"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-answer" id="faq-a2" hidden><p>Options include standard and deep cleaning, move-in/move-out cleaning, apartment cleaning, Airbnb or rental turnovers, and office or commercial cleaning. Availability depends on the location and the job.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a3">How much does a cleaning cost?<svg viewBox="0 0 24 24" class="icon"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-answer" id="faq-a3" hidden><p>Pricing depends on the property, size, condition, service type, and requested timing. Send a few details for a free, no-obligation quote.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a4">Can I request a specific focus for my clean?<svg viewBox="0 0 24 24" class="icon"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-answer" id="faq-a4" hidden><p>Yes—include your priorities in the request, such as a move-in clean or areas that need extra attention. We’ll confirm the details and what can be included in your quote.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a5">When are you open?<svg viewBox="0 0 24 24" class="icon"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-answer" id="faq-a5" hidden><p>The published business hours are Monday through Saturday, 8:00 AM–6:00 PM, and closed Sunday. Please contact us to confirm current availability for a specific date.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a6">How do I book?<svg viewBox="0 0 24 24" class="icon"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-answer" id="faq-a6" hidden><p>Start with the free quote form below. It will prepare a WhatsApp message with your details so the team can follow up. You can also call or email directly.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section" id="quote">
+      <div class="container quote-wrap">
+        <div class="quote-copy">
+          <span class="eyebrow">Your fresher space starts here</span>
+          <h2>Ready for a little more happy?</h2>
+          <p class="lead">Tell us what you need. We’ll use the details to start a conversation and prepare a free, no-obligation quote.</p>
+          <div class="contact-options">
+            <a href="tel:+18568700188" class="contact-option"><span class="service-icon"><svg viewBox="0 0 24 24" class="icon"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 8.9a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.8 2.1Z"/></svg></span><span><small>Call us</small><strong>(856) 870-0188</strong></span></a>
+            <a href="mailto:contact@happycleaningusa.com" class="contact-option"><span class="service-icon"><svg viewBox="0 0 24 24" class="icon"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span><span><small>Send an email</small><strong>contact@happycleaningusa.com</strong></span></a>
+            <a href="https://wa.me/18568700188?text=Hi%20Happy%20Cleaning%2C%20I%27d%20like%20a%20free%20cleaning%20quote." target="_blank" rel="noopener noreferrer" class="contact-option"><span class="service-icon"><svg viewBox="0 0 24 24" class="icon"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20l1.2-5.2A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.5 8.5c.5 2 2 3.5 4 4l1.4-1.4 2.1 1"/></svg></span><span><small>Prefer a message?</small><strong>Chat on WhatsApp</strong></span></a>
+          </div>
+        </div>
+        <form class="quote-form" id="quote-form">
+          <div class="form-intro">
+            <div><h3>Request your free quote</h3><p>Just a few quick details to get started.</p></div>
+            <span class="free-chip">No obligation</span>
+          </div>
+          <div class="form-grid">
+            <div class="field"><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" placeholder="e.g. Alex Smith" required></div>
+            <div class="field"><label for="phone">Phone number *</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(555) 123-4567" required></div>
+            <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com"></div>
+            <div class="field"><label for="zip">ZIP code *</label><input id="zip" name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}(-[0-9]{4})?" placeholder="e.g. 08054" required></div>
+            <div class="field"><label for="service">What do you need? *</label><select id="service" name="service" required><option value="">Choose a service</option><option>Standard Cleaning</option><option>Deep Cleaning</option><option>Move-In / Move-Out Cleaning</option><option>Apartment Cleaning</option><option>Airbnb / Rental Turnover</option><option>Office / Commercial Cleaning</option><option>Not sure yet</option></select></div>
+            <div class="field"><label for="property">Property type</label><select id="property" name="property"><option value="">Select type</option><option>House</option><option>Apartment / Condo</option><option>Office / Commercial</option><option>Short-term rental</option><option>Other</option></select></div>
+            <div class="field full"><label for="details">Anything we should know?</label><textarea id="details" name="details" placeholder="Rooms, approximate size, timing, or special priorities…"></textarea></div>
+          </div>
+          <button class="button button-primary form-submit" type="submit">Continue to WhatsApp <svg viewBox="0 0 24 24" class="icon"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>
+          <p class="form-privacy">Your details will be included in a message you can review before sending.</p>
+          <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+          <noscript><p class="form-privacy">JavaScript is needed for the quick WhatsApp quote form. You can contact us by phone or email instead.</p></noscript>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="#top" aria-label="Happy Cleaning home">
+            <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" class="icon"><path d="M16 3.5c1.7 6.1 3.4 7.8 9.5 9.5-6.1 1.7-7.8 3.4-9.5 9.5-1.7-6.1-3.4-7.8-9.5-9.5 6.1-1.7 7.8-3.4 9.5-9.5Z"/><path d="m25 21 1.3 3.7L30 26l-3.7 1.3L25 31l-1.3-3.7L20 26l3.7-1.3L25 21Z"/></svg></span>
+            <span class="brand-text"><strong>Happy Cleaning</strong><small>Make room for happy</small></span>
+          </a>
+          <p>Family-owned home, rental, and commercial cleaning for South Jersey and the Philadelphia area.</p>
+        </div>
+        <div class="footer-links"><h3>Explore</h3><a href="#services">Cleaning services</a><a href="#why-us">Why Happy Cleaning</a><a href="#reviews">Customer reviews</a><a href="#service-area">Service area</a><a href="#faq">FAQs</a></div>
+        <div class="footer-links"><h3>Get in touch</h3><a href="tel:+18568700188">(856) 870-0188</a><a href="mailto:contact@happycleaningusa.com">contact@happycleaningusa.com</a><a href="https://wa.me/18568700188" target="_blank" rel="noopener noreferrer">WhatsApp</a><span>Mon–Sat · 8:00 AM–6:00 PM</span><span>Closed Sundays</span></div>
+        <div class="footer-links"><h3>Make room for happy</h3><span>Need a refresh, a move-out clean, or a commercial walkthrough?</span><a class="button button-orange" href="#quote" style="width:fit-content;margin-top:7px;color:#2b271f">Request a free quote ↗</a></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year"></span> Happy Cleaning. All rights reserved.</span><span><a href="mailto:contact@happycleaningusa.com">Questions about this website?</a></span></div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta" aria-label="Quick contact actions">
+    <a class="button button-light" href="tel:+18568700188"><svg viewBox="0 0 24 24" class="icon"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7"/></svg> Call</a>
+    <a class="button button-primary" href="#quote">Free quote ↗</a>
+  </div>
+
+  <script>
+    (function () {
+      const menuButton = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('#primary-nav');
+      if (menuButton && nav) {
+        menuButton.addEventListener('click', function () {
+          const open = menuButton.getAttribute('aria-expanded') === 'true';
+          menuButton.setAttribute('aria-expanded', String(!open));
+          menuButton.setAttribute('aria-label', open ? 'Open navigation menu' : 'Close navigation menu');
+          nav.classList.toggle('open', !open);
+        });
+        nav.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () {
+            nav.classList.remove('open');
+            menuButton.setAttribute('aria-expanded', 'false');
+            menuButton.setAttribute('aria-label', 'Open navigation menu');
+          });
+        });
+      }
+
+      document.querySelectorAll('.faq-question').forEach(function (button) {
+        button.addEventListener('click', function () {
+          const isOpen = button.getAttribute('aria-expanded') === 'true';
+          const answer = document.getElementById(button.getAttribute('aria-controls'));
+          button.setAttribute('aria-expanded', String(!isOpen));
+          answer.hidden = isOpen;
+        });
+      });
+
+      document.querySelectorAll('[data-service]').forEach(function (link) {
+        link.addEventListener('click', function () {
+          const service = document.getElementById('service');
+          if (service) service.value = link.getAttribute('data-service');
+        });
+      });
+
+      const form = document.getElementById('quote-form');
+      const status = document.getElementById('form-status');
+      if (form) {
+        form.addEventListener('submit', function (event) {
+          event.preventDefault();
+          if (!form.reportValidity()) return;
+          const values = new FormData(form);
+          const lines = [
+            'Hi Happy Cleaning, I would like a free cleaning quote.',
+            '',
+            'Name: ' + (values.get('name') || ''),
+            'Phone: ' + (values.get('phone') || ''),
+            'Email: ' + (values.get('email') || 'Not provided'),
+            'ZIP code: ' + (values.get('zip') || ''),
+            'Service: ' + (values.get('service') || ''),
+            'Property type: ' + (values.get('property') || 'Not specified'),
+            'Details: ' + (values.get('details') || 'Not specified')
+          ];
+          const message = encodeURIComponent(lines.join('\n'));
+          if (status) {
+            status.style.display = 'block';
+            status.textContent = 'Opening WhatsApp with your quote request. Review the message, then press Send to contact Happy Cleaning.';
+          }
+          window.location.href = 'https://wa.me/18568700188?text=' + message;
+        });
+      }
+      const year = document.getElementById('year');
+      if (year) year.textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
